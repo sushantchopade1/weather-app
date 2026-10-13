@@ -1,0 +1,42 @@
+.item {
+  padding-inline-end: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color-2);
+  border-radius: 1rem;
+
+  &.active {
+    background-color: var(--bg-color-3);
+    color: var(--text-color-2);
+  }
+  &__wrapper {
+    padding: 1rem;
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  &__city {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+  }
+  &__country {
+    font-size: 0.75rem;
+    opacity: 0.5;
+  }
+  &__icon {
+    font-size: 2rem;
+  }
+  &__temp {
+  }
+  &__btn {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.125rem;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+  }
+}
